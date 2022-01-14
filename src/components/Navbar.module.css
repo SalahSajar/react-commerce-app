@@ -1,0 +1,58 @@
+.Navbar--EL {
+  background-color: #fff;
+  border-bottom: 1px solid #aaa;
+}
+
+.navbar_content--WRAPPER {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLink--EL {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+.cartLink--EL {
+  position: relative;
+  z-index: 0;
+}
+
+.cartLink--EL::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  z-index: -1;
+  transition: background-color 0.5s ease;
+}
+
+.cartLink--EL:hover::before {
+  background-color: #eee;
+}
+
+.selectedProductLength--EL {
+  position: absolute;
+  top: -0.9rem;
+  right: -0.9rem;
+  background-color: #f50057;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3rem;
+  font-size: 1.4rem;
+}
+
+.navLink--EL img {
+  width: 2.7rem;
+}
+
+.navLink--EL:not(.cartLink--EL) img {
+  margin-right: 0.8rem;
+}

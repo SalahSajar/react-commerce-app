@@ -1,0 +1,14 @@
+.shippingDetailsTypos--WRAPPER {
+  margin-bottom: 1.5rem;
+}
+
+.shippingDetailsTypos--WRAPPER h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #222;
+}
+
+.shippingDetailsTypos--WRAPPER p {
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
+}

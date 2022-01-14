@@ -1,0 +1,62 @@
+.checkoutMainBlock--EL {
+  border-radius: 0.2rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem -0.1rem rgba(0, 0, 0, 0.3);
+  padding: 2rem 3rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.checkMainBlockHeader--EL {
+  text-align: center;
+}
+
+.checkout_CheckIcon--EL {
+  width: 65%;
+  vertical-align: middle;
+  filter: invert(1);
+}
+
+.checkMainBlockHeader--EL h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.checkoutStepsHeader--CONTAINER {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  align-items: center;
+  grid-column-gap: 1rem;
+}
+
+.checkoutStepsHeader--CONTAINER hr {
+  height: 0.1rem;
+}
+
+.checkoutStep--EL {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.checkoutStep--EL[data-active="false"] {
+  filter: opacity(0.6);
+}
+
+.checkoutStepNumber--EL {
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(28, 28, 237);
+  color: #fff;
+  line-height: 2rem;
+  pointer-events: none;
+}
+
+.checkoutStepTitle--EL {
+  white-space: nowrap;
+  font-size: 1.2rem;
+}

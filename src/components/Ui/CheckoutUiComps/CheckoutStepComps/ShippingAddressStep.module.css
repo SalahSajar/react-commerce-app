@@ -1,0 +1,81 @@
+.formInputs--WRAPPER {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.shippingInputBlock--EL:not(.shippingDetailsSelectiong--CONTAINER) {
+  padding-top: 2.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.shippingInputBlock--EL label {
+  display: block;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  font-size: 1.5rem;
+  color: #666;
+  z-index: -1;
+  transition: all 0.2s ease;
+}
+
+.shippingInfos_input--EL {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  z-index: 1;
+  background: transparent;
+}
+
+.shippingInfos_input--EL::placeholder {
+  color: yellow;
+  opacity: 0;
+}
+
+.shippingInfos_input--EL:focus {
+  border-color: rgb(22, 22, 255);
+}
+
+.shippingInfos_input--EL:focus ~ label {
+  color: rgb(22, 22, 255);
+}
+
+.shippingInfos_input--EL:focus ~ label,
+.shippingInfos_input--EL:not(:placeholder-shown) ~ label,
+.shippingInfos_input--EL:valid ~ label {
+  transform: translateY(-140%);
+  font-size: 1.3rem;
+}
+
+.shippingDetailsSelectiong--CONTAINER {
+  margin-top: 1rem;
+}
+
+.shippingDetailsSelectiong--CONTAINER span {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #666;
+}
+
+.shippingDetailsSelectiong--CONTAINER select {
+  font-size: 1.6rem;
+  color: #111;
+  width: 100%;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.shippingDetailsSelectiong--CONTAINER select > option {
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}

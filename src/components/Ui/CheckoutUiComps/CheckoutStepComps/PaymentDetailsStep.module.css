@@ -1,0 +1,55 @@
+.shippingPaymentDetailsBlock--EL hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  height: 0;
+}
+
+.finalCartItems--CONTAINER {
+  margin-bottom: 2.5rem;
+}
+
+.shippingItemBlock--EL:not(:last-of-type) {
+  margin-bottom: 0.6rem;
+}
+
+.shippingItemBlock--EL {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shippingItemTypos--WRAPPER {
+  font-size: 1.8rem;
+}
+
+.shippingItemTypos--WRAPPER h5 {
+  font-weight: 400;
+  color: #222;
+}
+
+.shippingItemTypos--WRAPPER span {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.shippingItemTotalPrice--EL {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.totalCartPrice--CONTAINER {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+
+.totalCartPrice--CONTAINER h4 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.totalCartPrice--EL {
+  font-weight: 500;
+}

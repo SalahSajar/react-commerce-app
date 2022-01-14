@@ -1,0 +1,70 @@
+.cartSection--EL {
+  margin: 2rem 0;
+}
+
+.cart_header--EL {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  margin-top: 2.5rem;
+}
+
+.cartItems--CONTAINER {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.totalPrice--WRAPPER {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalPrice--EL {
+  font-size: 2.8rem;
+}
+
+.ctasEl--CONTAINER button {
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.1rem 1.7rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.emptyCartBtn--EL {
+  background-color: #fa3f3f;
+}
+.emptyCartBtn--EL:hover {
+  background-color: #e43a84;
+}
+
+.checkoutBtn--EL {
+  background-color: #c23ae4;
+}
+
+.checkoutBtn--EL:hover {
+  background-color: #bc21e2;
+}
+
+.emptycartTypos--CONTAINER {
+  font-size: 3rem;
+}
+
+.emptycartTypos--CONTAINER h2 {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-bottom: 1rem;
+}
+
+.emptycartTypos--CONTAINER p {
+  font-size: 1.8rem;
+  color: #222;
+}

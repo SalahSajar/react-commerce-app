@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fee;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+.mainContentLayout {
+  padding: 0 2.5rem;
+}
+
+.shippingDetailsContent--CONTAINER {
+  margin-top: 2rem;
+}
+
+.shippingDetails_header--EL {
+  color: #222;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.shippingDetailsCtaBtns--CONTAINER {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shippingDetailsCtaBtns--CONTAINER > * {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1rem 1.8rem;
+  border-radius: 0.2rem;
+
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.backBtn--EL {
+  color: #222;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease-in-out;
+}
+
+.backBtn--EL:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.nextBtn--EL {
+  border: none;
+  color: #fff;
+  background-color: rgba(28, 28, 237, 0.789);
+  box-shadow: 0 0.3rem 1rem -0.3rem rgba(0, 0, 0, 0.8);
+
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.3s;
+}
+.nextBtn--EL:disabled {
+  background-color: rgb(128, 123, 123);
+  color: #fff;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.nextBtn--EL:not(:disabled):hover {
+  background-color: rgba(28, 28, 237, 0.946);
+  box-shadow: 0 0.3rem 1rem -0.3rem rgba(0, 0, 0, 1);
+}
